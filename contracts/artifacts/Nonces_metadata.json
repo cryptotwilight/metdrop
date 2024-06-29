@@ -1,0 +1,92 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentNonce",
+						"type": "uint256"
+					}
+				],
+				"name": "InvalidAccountNonce",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "nonces",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Provides tracking nonces for addresses. Nonces will only increment.",
+			"errors": {
+				"InvalidAccountNonce(address,uint256)": [
+					{
+						"details": "The nonce used for an `account` is not the expected current nonce."
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {
+				"nonces(address)": {
+					"details": "Returns the next unused nonce for an address."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MetDropTestToken_flattened.sol": "Nonces"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MetDropTestToken_flattened.sol": {
+			"keccak256": "0xdb74d0ed356b898a626c2deb87f147fe58125163301b7e68a30e2630f5940bbf",
+			"urls": [
+				"bzz-raw://9ef1af6d9e2ae3aea745896d7fa34fb37516d5aaa4426437f76ff342cdad84d1",
+				"dweb:/ipfs/QmPCeLCuiAYpRMnvNPdz2NUU1AYEq3fXzznHgnTaPQZEBT"
+			]
+		}
+	},
+	"version": 1
+}
